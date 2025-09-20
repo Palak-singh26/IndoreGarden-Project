@@ -1,0 +1,101 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+} */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.font-lobster {
+    font-family: 'Lobster', cursive;
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1rem);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(36deg);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scaleUp(0.8);
+    }
+    50% {
+        transform: scaleUp(1.2);
+    }
+    100% {
+        transform: scaleUp(0.8);
+    }
+}
+
+.animate-moving {
+    animation: move 3s linear infinite;
+}
+.animate-rotating{
+    animation: rotate 8s linear infinite;
+}
+.animate-scalingUp{
+    animation: scaleUp 10s linear infinite;
+}
+
+section {
+    @apply py-20 md:py-28;
+}
+
+h1 {
+    @apply text-3xl md:text-4xl xl:text-5xl font-bold;
+}
+h2{
+    @apply text-2xl md:text-3xl xl:text-4xl;
+}
+h3{
+    @apply text-xl md:text-2xl xl:text-3xl;
+}
+.nav-link {
+    @apply text-lg font-bold duration-300;
+}
+
+.nav-link:hover {
+    @apply text-yellow-500;
+}
+.active{
+    @apply text-yellow-500;
+}
+.btn {
+    @apply border border-yellow-500 bg-yellow-500 rounded-md px-5 py-2 duration-300;
+}
+
+.btn span {
+    @apply font-bold;
+}
+
+.btn:hover {
+    @apply opacity-90;
+}
+
+.btn_outline {
+    @apply bg-transparent;
+}
+
+.btn_outline:hover {
+    @apply bg-yellow-500
+}
+.popular_card:hover img {
+    @apply -top-8;
+}

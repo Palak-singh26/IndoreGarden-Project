@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon icon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" />
+    
+    <link href="./output.css" rel="stylesheet" />
+    <title>plant website</title>
+</head>
+
+<body class="bg-green-950 text-white font-[Jost] tracking-wider">
+    <!-- Header -->
+    <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+        <nav class="px-4 sm:px-6 lg:px-12 flex items-center justify-between h-16 sm:h-20">
+            <!-- Logo -->
+            <div class="font-lobster text-3xl lg:text-3xl">IndoreGarden.</div>
+
+            <!-- Nav Menu -->
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300
+        overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row lg:gap-16">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#popular" class="nav-link">Popular</a></li>
+                    <li><a href="#review" class="nav-link">Review</a></li>
+                </ul>
+
+                <!-- Mobile leaf decor -->
+                <div class="absolute bottom-0 -right-20 opacity-90 lg:hidden">
+                    <img src="images/leaf-1.png" alt="leaf-1" class="w-32" />
+                </div>
+                <div class="absolute -top-5 left-0 rotate-90 opacity-90 lg:hidden">
+                    <img src="images/leaf-2.png" alt="leaf-1" class="w-32" />
+                </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div class="text-3xl cursor-pointer lg:hidden">
+                <i class="ri-menu-fold-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <menu>
+        <!-- home section -->
+        <section id="home" class=" relative px-4 sm:px-6 lg:px-15">
+            <div class="container">
+                <!-- blob 1 -->
+                <div
+                    class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+                </div>
+                <!-- blob2 -->
+                <div class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0 ">
+                </div>
+                <div class="flex flex-col items-center gap-5 lg:flex-row">
+                    <!-- content -->
+                    <div class=" home_data w-full space-y-5  lg:w-1/2">
+                        <h1>
+                            <span class="text-yellow-500">Plants</span> bring 
+                            <br> positivity and <br>
+                            <span class="text-yellow-500">improve</span> your <br>
+                           living environment.
+                        </h1>
+
+                        <p class="text-slate-300 font-lobster ">
+                            Plants bring life, color, and calm to our spaces. They clean the air, boost mood and
+                            make homes feel fresh and natural. At IndorePlants, we believe a little green can go a
+                            long way—whether it's a balcony pot or a desk plant. Let's grow green, together.
+                        </p>
+
+                        <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                            <button class="btn ">
+                                <span>Shop Now</span>
+                                <i class="ri-leaf-line"></i>
+                            </button>
+                            <button class="btn btn_outline">
+                                <span>Know more </span>
+                                <i class="ri-leaf-line"></i>
+                            </button>
+                        </div>
+
+                        <p class="text-xs font-lobster ">You will get 30-days free trial.</p>
+
+                        <div class="flex items-center gap-5 text-lg lg:pt-10 ">
+                            <i
+                                class="ri-facebook-fill text-slate-300 hover:text-yellow-500  duration-300 cursor-pointer"></i>
+                            <i
+                                class="ri-twitter-x-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                            <i
+                                class="ri-instagram-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                            <i
+                                class="ri-linkedin-fill  text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                        </div>
+                    </div>
+
+                    <!-- imag -->
+                    <div class="w-full relative lg:w-1/2">
+                        <img src="images/home (1).png" alt="home-image" class="home_image">
+
+                        <!-- leaf -->
+                        <div class="absolute -top-10 right-0 opacity-30 xl:top-5 animate-moving">
+                            <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+                        </div>
+                        <!-- flower -->
+                        <div class="absolute bottom-0 left-0 opacity-30 xl:bottom-12 animate-rotating  ">
+                            <i class="ri-flower-line text-6xl text-yellow-500"></i>
+                        </div>
+                        <!-- plant-->
+                        <div class="hidden absolute -top-8 -left-5 opacity-30 lg:block animate-scalingUp">
+                            <i class="ri-plant-line text-6xl text-yellow-500"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <div class="bg-white text-green-900 py-20 px-4 sm:px-8 lg:px-12 ">
+            <div class="container w-full grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+                <!-- cart 1 -->
+                <div
+                    class="service_card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5 ">
+                    <div class="flex item-center gap-5">
+                        <i class="ri-truck-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Fast<br>Delivery</p>
+                    </div>
+                    <p class="font-lobster">
+                        Fast delivery of fresh, healthy plants—straight from our
+                        nursery to your doorstep. 🌱
+                    </p>
+                </div>
+
+                <!-- cart 2 -->
+                <div
+                    class="service_card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5 ">
+                    <div class="flex item-center gap-5">
+                        <i class="ri-customer-service-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Great Customer<br>service</p>
+                    </div>
+                    <p class="font-lobster">
+                        We’re here to help at every step, ensuring a smooth and friendly plant shopping experience.
+                    </p>
+                </div>
+                <!-- cart 3 -->
+                <div
+                    class="service_card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5 ">
+                    <div class="flex item-center gap-5">
+                        <i class="ri-plant-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Original<br>Service</p>
+                    </div>
+                    <p class="font-lobster">
+                        Discover unique, nursery-fresh plants you won’t find anywhere else.
+                    </p>
+                </div>
+                <!-- cart 4 -->
+                <div
+                    class="service_card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5 ">
+                    <div class="flex item-center gap-5">
+                        <i class="ri-money-dollar-circle-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Affordable<br>Price</p>
+                    </div>
+                    <p class="font-lobster">
+                        Quality plants at budget-friendly prices—perfect for every home and garden.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Abouts -->
+        <section id="about" class="relative overflow-hidden">
+            <div class="about_leaf absolute -top-8 -right-12 opacity-50 ">
+                <img src="images/leaf-3.png" alt="leaf-3" class="w-40 md:w-52 xl:w-64">
+            </div>
+
+            <div class="about_top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                <h1 class="font-lobster text-yellow-500">About Us</h1>
+                <p class="max-w-2xl">Follow instruction for more</p>
+            </div>
+
+            <div class="container space-y-10 xl:space-y-0">
+                <!-- item 1 -->
+                <div class="flex flex-col items-center lg:flex-row gap-5 ">
+                    <!-- image -->
+                    <div class="about_itemimg1 w-full lg:w-1/2">
+                        <img src="images/plant-1.png" alt="pant-1" class="w-full sm-2/3 lg:w-full xl:w-2/3 mx-auto ">
+                    </div>
+                    <!-- content -->
+                    <div class=" about_itemcon1 w-full lg:w-1/2">
+                        <div class="py-20 px-4 sm:px-8 space-y-5">
+                            <h3>
+                                Make your <span class="text-yellow-500">organic</span> <br> garden
+                            </h3>
+
+                            <p class="text-slate-300 font-lobster ">
+                                Start your journey to a greener lifestyle with us and bring nature closer to your home.
+                                We provide a wide variety of fresh, pesticide-free plants that help you grow a healthy
+                                and sustainable garden. Whether you're a beginner or a plant lover, our expert support,
+                                quality plants, and eco-friendly approach make gardening simple, joyful, and truly
+                                organic.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- item 2-->
+                <div class="flex flex-col items-center lg:flex-row-reverse gap-5 ">
+                    <!-- image -->
+                    <div class="about_itemimg2 w-full lg:w-1/2">
+                        <img src="images/plant-2.png" alt="pant-1" class="w-full sm-2/3 lg:w-full xl:w-2/3 mx-auto ">
+                    </div>
+                    <!-- content -->
+                    <div class="about_itemcon2 w-full lg:w-1/2">
+                        <div class="py-20 px-4 sm:px-8 space-y-5">
+                            <h3>
+                                Come with us <br>
+                                <span class="text-yellow-500">grow up</span> your plant
+                            </h3>
+
+                            <p class="text-slate-300 font-lobster ">
+                                Come with us grow up your plant and experience the joy of
+                                nurturing life from the soil up. We provide everything you need—from quality plants and
+                                gardening tools to expert tips—so your green space can thrive. Whether you're growing
+                                indoors or outdoors, our support helps you turn every plant into a proud success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular -->
+        <section id="popular" class="bg-green-900 px-4 sm:px-8 lg:px-12">
+            <div class="popular_top flex flex-col items-center gap-3 text-center mb-10 md:mb-28 ">
+                <h1 class="font-lobster text-yellow-500">Your Choice Plant</h1>
+                <p class="max-w-2xl">Follow instruction for more</p>
+            </div>
+
+            <div class="container w-full grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  ">
+                <!-- card 1 -->
+                <div class=" popular_card bg-green-950 p-10 pt-24 rounded-md  mt-36 relative">
+                    <img src="images/cart-1.png" alt="cart-1"
+                        class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 ">
+                    <p class="italic">Nephrolepis exaltata</p>
+                    <h3>Boston Fern</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-400"></i>
+                        <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between ">
+                        <p class="text-xl">$5</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm">
+                            <i class="ri-shopping-cart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class=" popular_card bg-green-950 p-10 pt-24 rounded-md  mt-36 relative">
+                    <img src="images/cart-2.png" alt="cart-1"
+                        class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 ">
+                    <p class="italic">Ficus elastica</p>
+                    <h3>Rubber Plant</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-400"></i>
+                        <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between ">
+                        <p class="text-xl">$7</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm">
+                            <i class="ri-shopping-cart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class=" popular_card bg-green-950 p-10 pt-24 rounded-md  mt-36 relative">
+                    <img src="images/cart-3.png" alt="cart-1"
+                        class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 ">
+                    <p class="italic">Spathiphyllum wallisii</p>
+                    <h3>Peace Lily</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-400"></i>
+                        <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between ">
+                        <p class="text-xl">$4</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm">
+                            <i class="ri-shopping-cart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class=" popular_card bg-green-950 p-10 pt-24 rounded-md  mt-36 relative">
+                    <img src="images/cart-4.png" alt="cart-1"
+                        class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 ">
+                    <p class="italic">Adenium Obesm</p>
+                    <h3>Desert Rose</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <i class="ri-star-line text-gray-400"></i>
+                        <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between ">
+                        <p class="text-xl">$6</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm">
+                            <i class="ri-shopping-cart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+        </section>
+        <!-- Reviews -->
+        <section id="review" class=" relative mb-20 md:mb-28 overflow-hidden px-4 sm:px-8 lg:px-12">
+
+             <div class="about_leaf absolute -top-8 -left-12 opacity-50 ">
+                <img src="images/leaf-4.png" alt="leaf-4" class="w-40 md:w-52 lg:w-64">
+            </div> 
+            <div class="review_top flex flex-col items-center gap-3 text-center mb-10 md:mb-28">
+                <h1 class="font-lobster text-yellow-500">Customer Review</h1>
+                <p class="max-w-2xl">Follow instruction for more</p>
+            </div>
+
+            <div class="container ">
+                <div>
+                    <div class="container w-full grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+                        <!-- Slide 1 -->
+                        <div
+                            class="review_card border border-green-900 p-5  cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                            <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6 ">
+                                <p class="font-lobster">
+                                    Impressed with IndorePlants! Fresh,healthy plants, and fast delivery.
+                                    My go-to for greenery!
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="images/review-1.jpg" alt="review-1" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">Priya singh</p>
+                                        <p>Designer</p>
+                                    </div>
+                                </div>
+                                <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div
+                            class="review_card border border-green-900 p-5  cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                            <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                                <p class="font-lobster">
+                                    Fast delivery! My peace lily and fern arrived healthy and beautiful.
+                                    The care tips were super helpful!
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="images/review-2.jpg" alt="review-2" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">Ravi Mehra</p>
+                                        <p>Developer</p>
+                                    </div>
+                                </div>
+                                <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div
+                            class="review_card border border-green-900 p-5  cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                            <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                                <p class="font-lobster">
+                                    Loved the eco-friendly packaging! IndorePlants has a great collection, and the
+                                    quality is outstanding.
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="images/review-3.jpg" alt="review-3" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">Neha Jain</p>
+                                        <p>Artist</p>
+                                    </div>
+                                </div>
+                                <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div
+                            class="review_card border border-green-900 p-5  cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                            <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                                <p class="font-lobster">
+                                    Amazing service and fresh plants! I’ll definitely order again. Customer support was
+                                    also very helpful.
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="images/review-4.jpg" alt="review-4" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-yellow-500 uppercase">Aman Yadav</p>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                                <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </menu>
+    <!-- footer section -->
+    <footer class="bg-yellow-100 text-green-950 pt-32 pb-20 md:pt-28 relative px-4 sm:px-8 lg:px-12">
+        <!-- newsletter  -->
+        <div class=" container text-white absolute top-0 right-0 left-0 -translate-y-1/2 mt-10 px-4 sm:px-8 lg:px-15">
+            <div class="bg-green-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
+                <h3>
+                    <span class="text-yellow-500">Subscribe</span> to our newsletter subscribe
+                </h3>
+                <div class="flex flex-col md:flex-row gap-1">
+                    <input type="email" placeholder="Your Email Address"
+                        class=" w-full px-5 py-3 bg-white text-green-900 rounded-md outline-none  ">
+                    <button
+                        class="flex items-center justify-center gap-1 bg-green-950 px-5 py-3 rounded-md hover:border border-e-emerald-600 hover:opacity-80 duration-300 ">
+                        <span>Subscribe</span>
+                        <i class="ri-send-plane-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- social icon -->
+        <div class="footer_icon container mt-16 mb-10">
+            <div class="border-b border-green-500 relative">
+                <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto ">
+                    <div class="bg-yellow-100 text-lg text-center space-x-2">
+                        <i class="ri-facebook-fill  hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                        <i class="ri-twitter-x-line hover:review_card text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                        <i class="ri-instagram-line hover:text-yellow-500 duration-300 cursor-pointer "></i>
+                        <i class="ri-linkedin-fill  hover:text-yellow-500 duration-300 cursor-pointer "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div
+            class=" footer_content container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-8 text-center md:text-start">
+            <!-- item-1 -->
+            <div>
+                <div class="text-7xl text-green-700 text-center inline-block ">
+                    <i class="ri-leaf-fill"></i>
+                    <p class="font-lobster text-xl sm:text-2xl ">IndorePlants.</p>
+                </div>
+            </div>
+            <!-- item-2 -->
+            <div>
+                <p class="mb-5 font-bold text-xl">Quick Link</p>
+
+                <div class="flex flex-col gap-1">
+                    <a href="#">Plants</a>
+                    <a href="#">Flowers</a>
+                    <a href="#">Gerdening</a>
+                    <a href="#">Seeds</a>
+                    <a href="#">Shipping</a>
+                </div>
+            </div>
+            <!-- item-3 -->
+            <div>
+                <p class="mb-5 font-bold text-xl">Popular Service</p>
+
+                <div class="flex flex-col gap-1">
+                    <a href="#">Tree Planting</a>
+                    <a href="#">Grass Cutting</a>
+                    <a href="#">Weeds Control</a>
+                    <a href="#">Project</a>
+                </div>
+            </div>
+            <!-- item-4 -->
+            <div>
+                <p class="mb-5 font-bold text-xl">Contact Us/p>
+
+                <div class="flex flex-col gap-1">
+                    <a href="tel:+8833378901">+88 333 78 901</a>
+                    <a href="mailto:indoreplants@gamil.com">indoreplants@gamil.com</a>
+                    <br>
+                    <p>1234 Tailwind Ave,Css City,WebLand 56789,USA</p>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="container">
+            <p class="text-center mt-10 opacity-50">copyright &copy;2025 IndorePlants. All right reserved</p>
+        </div>
+        <!-- floral Image -->
+        <div class=" footer_floral absolute bottom-0 left-0 opacity-10 ">
+            <img src="images/floral-1.png" alt="floral" class="w-full lg:w-1/2">
+        </div>
+    </footer>
+
+    <!-- Scroll up button -->
+    <a href="#"
+        class="copy_data fixed right-4 -bottom-1/2 bg-yellow-500 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300  "
+        id="scroll-Up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+     
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="App.js"></script>
+</body>
+
+</html>
